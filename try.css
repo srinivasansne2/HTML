@@ -1,0 +1,21 @@
+.logo{
+    padding: 0;
+    columns: #fff;
+    background: linear-gradient(to right,#4d4d4d 0,#fff 10%,#4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2.5s infinite linear forwards;
+    text-decoration: none;
+}
+@keyframes shine{
+    0%{
+        background-position: 0px;
+    }
+    50%{
+        background-position: 10px;
+    }
+    100%{
+        background-position: 180px;
+    }
+}

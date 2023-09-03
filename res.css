@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 10;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google San Regular";
+    box-sizing: border-box;
+}
+
+.mar{
+    margin: 0;
+    position: fixed;
+    z-index: 99;
+    font-size: 24px;
+    font-weight: 800;
+    border: #4d4d4d;
+}
+
+
+h1{
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    background-size: auto;
+    font-family:'Sansita Swashed', cursive;
+
+}
+p{ 
+    margin:20px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+/* Changing Backround */
+body{
+    animation: BgA 5s infinite alternate linear;
+}
+@keyframes BgA{
+    0%{
+        background: #af1818;
+    }
+    25%{
+        background: #0b6d13;
+    }
+    50%{
+        background: #9c0a3f;
+    }
+    100%{
+        background: #a8b314;
+    }
+
+}
+
+
+.line{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+/* Title shine look */
+.logo{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0;
+    columns: #fff;
+    background: linear-gradient(to right,#fff 0,#4d4d4d 70%,#fff 90%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2.5s infinite linear forwards;
+    text-decoration: none;
+}
+@keyframes shine{
+    0%{
+        background-position: 0px;
+    }
+    50%{
+        background-position: 150px;
+    }
+    100%{
+        background-position: 180px;
+    }
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
+.nav-bar ul li a.active{
+    color: #11101b;
+    background: #fefefe;
+}
+@media only screen and (max-width: 1320px) {
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    header{
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+    
+    .nav-bar{
+        border-bottom-left-radius: 20px;
+        height: 0px;
+        position: absolute;
+        right: 0%;
+        top: 65px;
+        width:0px;
+        background:#000000;
+        transition: 0.7s ;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 350px;
+        width: 250px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition:0.7s;
+        opacity: 0;
+        
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}
+
+.C{
+    padding-bottom: 9px;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    background-size: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.lor{
+    padding: 10px;
+}

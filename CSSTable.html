@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+<style>
+    .table{
+        display: table;
+        text-align: center;
+        margin: 100px;
+        width: 500px;
+        
+    }
+    .row{
+        display: table-row;
+    }
+    .col{
+        display: table-cell;
+        border: 1px solid black ;
+    }
+    .header{
+        display: table-header-group;
+        text-align: center;
+        width: 500px;
+        background: orange;
+        font-weight: bolder;
+    }
+    .footer{
+        display: table-footer-group;
+    }
+    .caption{
+        display: table-caption;
+        text-align: center;
+        font-weight: bolder;
+        color: orangered;
+    }
+    .col-group{
+        display: table-column-group;
+    }
+    .tbl-col{
+        display: table-column;
+    }
+    .col-2{
+        background: teal;
+        width: 50px;
+    }
+    .row-group{
+        display: table-row-group;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div class="table">
+        <div class="caption">Creating Table Using CSS</div>
+        <div class="col-group">
+            <div class="tbl-col col-1">col-1</div>
+            <div class="tbl-col col-2">col-2</div>
+            <div class="tbl-col col-3">col-3</div>
+        </div>
+        <div class="header">
+            <div class="row">
+                <div class="col">Name</div>
+                <div class="col">Age</div>
+                <div class="col">City</div>
+            </div>
+        </div>
+        <div class="row-group">
+            <div class="row">
+                <div class="col">Sri</div>
+                <div class="col">18</div>
+                <div class="col">Trichy</div>
+            </div>
+            <div class="row">
+                <div class="col">Ram</div>
+                <div class="col">17</div>
+                <div class="col">Salem</div>
+            </div>
+            <div class="row">
+                <div class="col">Sara</div>
+                <div class="col">19</div>
+                <div class="col">Chennai</div>
+            </div>
+            <div class="row">
+                <div class="col">Jan</div>
+                <div class="col">18</div>
+                <div class="col">Perambalur</div>
+            </div>
+            <div class="row">
+                <div class="col">Srinivasan</div>
+                <div class="col">18</div>
+                <div class="col">Perambalur</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="col">footer</div>
+                <div class="col">footer</div>
+                <div class="col">footer</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
